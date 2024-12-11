@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/main"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/exerciseNameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Exercise Name" />
+
+    <EditText
+        android:id="@+id/repsInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Reps"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/setsInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Sets"
+        android:inputType="number" />
+    <EditText
+        android:id="@+id/setDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Data"
+        android:inputType="date" />
+
+    <Button
+        android:id="@+id/addExerciseButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Exercise" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/saveProgressButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Progress" />
+</LinearLayout>
